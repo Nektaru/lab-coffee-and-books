@@ -1,0 +1,16 @@
+<style>
+    #map {
+        width: 100%;
+        height: 400px;
+    }
+    
+</style>
+
+<h3 id="placeName" data-id="{{ place._id}}">{{ place.name}}</h3>
+Hola que tal me gustaría que me saliesen los fucking marcadores.
+<a href="/places/{{place._id}}/edit">Edit this place</a>
+<a href="/places">Go back to the list</a>
+
+    <div id="map"></div>
+
+    {{!-- add map here --}}

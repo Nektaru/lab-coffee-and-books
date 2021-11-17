@@ -1,2 +1,22 @@
-<h1>{{title}} 🚀</h1>
-<p>Welcome Ironhacker!</p>
+
+
+<h1>{{title}}</h1>
+<div class="info">
+    <h3>List of all Places</h3>
+    <a href="/new">Create New Place</a>
+    <a href="/places">List of Places</a>
+    <ul>
+        {{#each places}}
+            <li>
+                <a href="/places/{{this._id}}">{{ this.name}}</a>
+                |
+                <a href="/places/{{this._id}}/delete">Delete</a>
+            </li>
+        {{/each }}
+    </ul>
+    <div>
+        <img src="/images/cuqui.jpg" alt="patito">
+        </br>
+        No he conseguido ni coffee ni books pero aquí os dejo un patito.
+    </div>
+</div> 
